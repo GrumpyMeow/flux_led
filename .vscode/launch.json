@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: -sStid",
+            "type": "python",
+            "request": "launch",
+            "module": "flux_led",
+            "args": ["-sStid"]
+        },
+        {
+            "name": "Python: -sid ip#",
+            "type": "python",
+            "request": "launch",
+            "module": "flux_led",
+            "args": ["-sid 192.168.11.220"]
+        },
+        {
+            "name": "Python: ip# -c 1,0,0",
+            "type": "python",
+            "request": "launch",
+            "module": "flux_led",
+            "args": ["192.168.11.220","-c","1,0,0"]
+        },
+        {
+            "name": "Set preset pattern #35 with 40% speed:",
+            "type": "python",
+            "request": "launch",
+            "module": "flux_led",
+            "args": ["192.168.11.220","-p","37","40"]
+        }
+    ]
+}
